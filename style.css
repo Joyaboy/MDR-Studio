@@ -1,0 +1,626 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+      background-color: #1e1e1e;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: rgb(255, 255, 255);
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .nama-logo {
+        color: black;
+    }
+    .logo img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+    }
+
+    nav ul li a.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    
+
+    .btn-learn {
+        transition: background-color 0.3s, color 0.3s;
+    }
+    .btn-learn:hover {
+        background-color: black;
+      color: white;
+    }
+
+    .btn-contact {
+      padding: 10px 25px;
+      background-color: white;
+      border: 2px solid black;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .btn-contact:hover {
+      background-color: black;
+      color: white;
+    }
+
+    .hero {
+      background-image: url('https://i.imgur.com/T6Ex1V6.jpeg');
+      background-size: cover;
+      background-position: center;
+      height: calc(100vh - 100px);
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .hero-content {
+      max-width: 600px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+
+    .services {
+      text-align: center;
+      padding: 80px 40px;
+      background-color: #1e1e1e;
+    }
+
+    .services h2 {
+      font-size: 2.5rem;
+      margin-bottom: 60px;
+    }
+
+    .service-items {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .service-item {
+      max-width: 250px;
+      text-align: center;
+    }
+
+    .service-item img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .service-item:nth-child(2) img {
+      border-radius: 30% 30% 30% 30% / 40% 40% 60% 60%;
+    }
+
+    .service-item h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    .btn-learn {
+      margin-top: 50px;
+      padding: 12px 30px;
+      background-color: white;
+      color: black;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 80px 40px;
+      background-color: #1e1e1e;
+      color: white;
+    }
+
+    .gallery-text, .gallery-images {
+      flex: 1 1 100%;
+      margin-bottom: 30px;
+    }
+
+    .gallery-text {
+      padding-right: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .gallery-text h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .gallery-text p {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+
+    .gallery-text .btn-learn {
+      align-self: flex-start;
+    }
+
+    .gallery-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery-images img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .about {
+      background-image: url('https://i.imgur.com/pQ0J1gD.jpeg');
+      background-size: cover;
+      background-position: center;
+      padding: 120px 40px;
+      color: white;
+      text-align: left;
+    }
+
+    .about-content {
+      max-width: 600px;
+    }
+
+    .about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+
+    .social-section {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #121212;
+    }
+
+    .social-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .social-icons-main {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .social-icons-main span:hover {
+        background-color: black;
+        color: white;   
+    }
+
+    .social-icons-main span {
+      background: white;
+      color: black;
+      padding: 10px 15px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    footer {
+      background-color: black;
+      color: white;
+      padding: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    footer .logo img {
+      height: 70px;
+      margin-bottom: 10px;
+    }
+
+    footer div {
+      margin-bottom: 20px;
+    }
+
+    footer h4 {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: underline;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .copyright {
+      width: 100%;
+      text-align: right;
+      font-size: 0.9rem;
+      margin-top: 20px;
+    }
+
+     .services-hero {
+      background-image: url('https://i.imgur.com/T6Ex1V6.jpeg');
+      background-size: cover;
+      background-position: center;
+      height: calc(100vh - 100px);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 40px;
+      flex-wrap: wrap;
+    }
+
+    .services-hero h1 {
+      font-size: 3rem;
+    }
+
+    .services-hero p {
+      font-size: 1rem;
+      max-width: 500px;
+    }
+
+    .services-section {
+      text-align: center;
+      padding: 80px 40px;
+    }
+
+    .services-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 60px;
+    }
+
+    .service-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .service-card {
+      width: 280px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px 20px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .service-image {
+        width: 10px;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .service-card span.price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    .service-card p {
+      font-size: 0.95rem;
+      color: #ccc;
+      margin-bottom: 25px;
+    }
+
+    .btn-book {
+      background: none;
+      border: 2px solid white;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-book:hover {
+      background: white;
+      color: #0f1c2c;
+    }
+
+    .about-section {
+      background-image: url('https://i.imgur.com/G5p2aFA.jpeg');
+      background-size: cover;
+      background-position: center;
+      padding: 80px 40px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .about-text {
+      max-width: 600px;
+    }
+
+    .about-text h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .about-logo img {
+      max-width: 350px;
+      height: auto;
+    }
+
+      .gallery-hero {
+      background-image: url('https://i.imgur.com/CVlYrYk.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 80px 40px;
+      color: white;
+    }
+
+    .gallery-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .gallery-hero p {
+      max-width: 700px;
+      line-height: 1.6;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+
+      nav ul li a.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .btn-contact {
+      padding: 10px 25px;
+      background-color: white;
+      border: 2px solid black;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .btn-contact:hover {
+      background-color: black;
+      color: white;
+    }
+
+    .hero-section {
+      background-image: url('https://i.imgur.com/CVlYrYk.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 80px 40px;
+      color: white;
+    }
+
+    .hero-section h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-section p {
+      max-width: 700px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .social-buttons {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 50px;
+    }
+
+    .social-buttons a {
+      background-color: white;
+      color: black;
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-size: 20px;
+      display: inline-block;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .social-buttons a:hover{
+        background-color: black;
+        color: white;   
+    }
+    .order-steps {
+      font-size: 1.2rem;
+      max-width: 700px;
+      line-height: 1.8;
+    }
+
+    .logo-large {
+      margin-top: 20px;
+      text-align: right;
+    }
+
+    .logo-large img {
+      max-width: 250px;
+    }
+
+    @media (max-width: 768px) {
+      .hero-section {
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .hero-section h1 {
+        font-size: 2.2rem;
+      }
+
+      .logo-large {
+        text-align: center;
+        margin-top: 40px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .gallery-hero {
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .gallery-hero h1 {
+        font-size: 2.2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .about-text h1 {
+        font-size: 2.2rem;
+      }
+
+      .about-logo img {
+        margin-top: 30px;
+      }
+    }
+
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .gallery {
+        flex-direction: column;
+      }
+
+      .about {
+        padding: 80px 20px;
+      }
+
+      .services, .gallery, .social-section, footer {
+        padding: 40px 20px;
+      }
+    }
+
+     @media (max-width: 768px) {
+      .services-hero {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        padding: 40px 20px;
+        height: auto;
+      }
+
+      .services-hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .services-section {
+        padding: 40px 20px;
+      }
+    }
+
